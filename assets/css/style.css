@@ -1,0 +1,170 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+ }
+ 
+ h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+ }
+ 
+ label {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 10px;
+ }
+ 
+ input[type="text"] {
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+ }
+ 
+ button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+ }
+ 
+ .rectangle-container, .encoded-container, .decoded-container {
+  margin-top: 50px;
+ }
+ 
+ .rectangle-container h2, .encoded-container h2, .decoded-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+ }
+ 
+ .rectangle-container #rectangle, .encoded-container #encoded, .decoded-container #decoded {
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+ }
+ 
+
+
+/* 
+  b     .container {
+    margin: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+textarea {
+    width: 400px;
+    height: 100px;
+}
+button {
+    margin-top: 10px;
+}
+.result {
+    margin-top: 20px;
+}
+.rectangle {
+    font-family: monospace;
+    white-space: pre;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+} */
+
+
+/* 
+
+$(document).ready(function() {
+  $('#encodeBtn').click(function() {
+      var inputText = $('#inputText').val().toLowerCase().replace(/[^a-z]/g, '');
+      var encodedText = encodeText(inputText);
+      var rectangle1 = createRectangle(inputText);
+      var rectangle2 = createRectangle(encodedText);
+      $('#rectangle1').text(rectangle1);
+      $('#encodedText').text(encodedText);
+      $('#rectangle2').text(rectangle2);
+  });
+  function encodeText(text) {
+      var length = text.length;
+      var rows = Math.floor(Math.sqrt(length));
+      var columns = Math.ceil(Math.sqrt(length));
+      if (rows * columns < length) {
+          rows++;
+      }
+      var encodedText = '';
+      for (var c = 0; c < columns; c++) {
+          for (var r = 0; r < rows; r++) {
+              var index = c + r * columns;
+              if (index < length) {
+                  encodedText += text.charAt(index);
+              }
+          }
+          if (c < columns - 1) {
+              encodedText += ' ';
+          }
+      }
+      return encodedText;
+  }
+  function createRectangle(text) {
+      var length = text.length;
+      var rows = Math.floor(Math.sqrt(length));
+      var columns = Math.ceil(Math.sqrt(length));
+      if (rows * columns < length) {
+          rows++;
+      }
+      var rectangle = '';
+      var index = 0;
+      for (var r = 0; r < rows; r++) {
+          for (var c = 0; c < columns; c++) {
+              if (index < length) {
+                  rectangle += text.charAt(index);
+                  index++;
+              }
+          }
+          if (r < rows - 1) {
+              rectangle += '\n';
+          }
+      }
+      return rectangle;
+  }
+}); */
+
+
+
+/* //function to create the rectangle
+function createRectangle(text) {
+  if (typeof text !== "string") {
+    throw new Error(`createRectangle: expected string, got ${typeof text}`);
+  }
+  let length = text.length;
+  const rows = Math.floor(Math.sqrt(length));
+  const columns = Math.ceil(Math.sqrt(length));
+  if (rows * columns < length) {
+    rows++;
+  }
+
+  let rectangleText = "";
+  let index = 0;
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < columns; c++) {
+      if (index < length) {
+        rectangleText += text.charAt(index);
+        index++;
+      }
+    }
+    if (r < rows - 1) {
+      rectangleText += "\n";
+    }
+  }
+  console.log(`createRectangle: ${text} -> ${rectangleText.trim()}`);
+  return rectangleText;
+} */
