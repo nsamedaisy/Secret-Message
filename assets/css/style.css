@@ -2,52 +2,63 @@
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
- }
- 
- h1 {
+}
+
+h1 {
   font-size: 3em;
   margin-bottom: 30px;
- }
- 
- label {
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #000000b1;
+}
+
+label {
   font-size: 1.5em;
   display: block;
   margin-bottom: 10px;
- }
- 
- input {
-  font-size: 1.5em;
+}
+
+input {
+  font-size: 1.3em;
   padding: 10px;
   border-radius: 5px;
-  border: none;
   margin-bottom: 20px;
- }
- 
- button {
+}
+
+button {
   font-size: 1.5em;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 5px;
   border: none;
-  background-color: #007bff;
+  background-color: #0470e3;
   color: #fff;
   cursor: pointer;
- }
- 
- .rectangle-container, .encoded-container, .decoded-container {
+}
+
+.rectangle-container,
+.encoded-container,
+.decoded-container {
   margin-top: 50px;
- }
- 
- .rectangle-container h2, .encoded-container h2, .decoded-container h2 {
+}
+
+.rectangle-container h2,
+.encoded-container h2,
+.decoded-container h2 {
   font-size: 2em;
   margin-bottom: 20px;
- }
- 
- .rectangle-container #rectangle1, .encoded-container #encoded, .decoded-container #rectangle2 {
+}
+
+.rectangle-container #rectangle1,
+.encoded-container #encoded,
+.decoded-container #rectangle2 {
   font-size: 1.5em;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-bottom: 20px;
   text-align: center;
- }
- 
+  background-color: rgba(0, 0, 0, 0.816);
+  color: white;
+}
