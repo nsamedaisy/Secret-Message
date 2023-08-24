@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Secret Message</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Square Code Encryption</h1>
+    <h3>Implementing the classic method for composing secret messages.</h3>
+    <label for="input">Enter text to encrypt:</label>
+    <input type="text" placeholder="Enter here:" id="input"></input type="text">
+    <button onclick="encode()">Encrypt</button>
+
+    <div class="rectangle-container">
+      <h2>Normalized Rectangle:</h2>
+      <div id="rectangle1"></div>
+    </div>
+
+    <div class="encoded-container">
+      <h2>Encoded Chunks:</h2>
+      <div id="encoded"></div>
+    </div>
+
+    <div class="decoded-container">
+      <h2>Encoded Rectangle:</h2>
+      <div id="rectangle2"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
