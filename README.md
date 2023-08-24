@@ -22,4 +22,4 @@ This application was built using HTML, CSS, and JavaScript.
 
 ## Link
 
-<>
+<https://nsamedaisy.github.io/Secret-Message/>
